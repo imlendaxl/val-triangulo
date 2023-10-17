@@ -6,3 +6,5 @@ if n1 < n2+n3 and n2 < n1+n3 and n3 < n1+n2:
     print('\033[0;49;34mForma um triangulo')
 else:
     print('\033[0;49;39mNão forma um triangulo')
+
+# eita breia ai sim seu dpimenta
