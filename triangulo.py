@@ -1,26 +1,26 @@
 # Validador de Triângulo
 
-n1 = float(input('digite um comprimento\n'))
-n2 = float(input('digite um outro comprimento\n'))
-n3 = float(input('digite um outro comprimento\n'))
+x1 = float(input('digite um comprimento\n'))
+x2 = float(input('digite um outro comprimento\n'))
+x3 = float(input('digite um outro comprimento seu rapaz\n'))
 
-if n1 < n2+n3 and n2 < n1+n3 and n3 < n1+n2:
-    print(f'{n1},{n2} e {n3} formam um triangulo')
+if x1 < x2+x3 and x2 < x1+x3 and x3 < x1+x2:
+    print(f'{x1},{x2} e {x3} formam um triangulo')
 else:
-    print(f'{n1},{n2} e {n3} não formam um triangulo')
+    print(f'{x1},{x2} e {x3} não formam um triangulo')
 
-def tipo_trian (n1,n2,n3):
-    if n1 + n2 > n3 and n1 + n3 > n2 and n2 + n3 > n1:
-        if n1 == n2 == n3:
+def tipo_trian (x1,x2,x3):
+    if x1 + x2 > x3 and x1 + x3 > x2 and x2 + x3 > x1:
+        if x1 == x2 == x3:
             return 'triangulo equilatero'
-        elif n1 == n2 or n1 == n3 or n2 == n3:
+        elif x1 == x2 or x1 == x3 or x2 == x3:
             return 'triangulo isosceles'
         else:
             return 'triangulo escaleno'
     else:
         return 'não é um triangulo valido'
 
-resultado = tipo_trian (n1,n2,n3)
+resultado = tipo_trian (x1,x2,x3)
 print(resultado)
 
-# eita breia ai sim seu dpimenta
+# eita breia ai sim seu pimenta
